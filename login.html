@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body>
+    <div class="login">
+        <img src="image/img.png" alt="cat_logo">
+        <h2>
+            <span>Login</span>
+        </h2>
+        <label for="username">
+            <input type="text" id="username" placeholder="Username">
+        </label>
+
+
+        <br>
+        <label for="password">
+            <input type="password" id="password" placeholder="Password">
+        </label>
+        <br>
+        <input type="button" value="Login" onclick="login()">
+        <p id="error-message" class="error"></p>
+    </div>
+
+    <script>
+        function login() {
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            const errorMessage = document.getElementById('error-message');
+
+            // 假设用户名和密码为admin
+            if (username === 'admin' && password === '123456') {
+                window.location.href = 'index.html';
+            } else {
+                errorMessage.textContent = '用户名或密码不正确';
+            }
+        }
+    </script>
+</body>
+
+</html>
