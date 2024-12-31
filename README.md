@@ -6,6 +6,8 @@
 
 ```
 .
+├── css                # css代码，美化界面
+├── image              # 图片资源
 ├── app.py             # Flask 后端服务器，处理 DNS 查询和记录
 ├── index.html         # 前端页面，展示 DNS 查询表单和结果
 ├── login.html         # 登录页面，允许用户进行身份验证
